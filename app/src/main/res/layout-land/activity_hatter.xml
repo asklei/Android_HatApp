@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HatterActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_picture"
+        android:id="@+id/buttonPicture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:onClick="onPicture" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_color"
+        android:id="@+id/buttonColor"
+        android:onClick="onColor"
+        android:layout_alignRight="@+id/buttonPicture"
+        android:layout_alignEnd="@+id/spinnerHat"
+        android:layout_below="@+id/buttonPicture"
+        android:layout_alignLeft="@+id/buttonPicture" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerHat"
+        android:layout_below="@+id/buttonColor"
+        android:layout_alignLeft="@+id/buttonPicture"
+        android:layout_toRightOf="@+id/buttonPicture" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_feather"
+        android:id="@+id/checkFeather"
+        android:layout_below="@+id/spinnerHat"
+        android:layout_alignLeft="@+id/buttonPicture"
+        android:layout_toRightOf="@+id/buttonPicture"
+        android:onClick="onFeather" />
+
+    <edu.msu.xulei1.leixumadhatter.HatterView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/hatterView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonPicture" />
+
+</RelativeLayout>

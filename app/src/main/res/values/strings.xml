@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lei Xu Mad Hatter</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_color">Color</string>
+    <string name="check_feather">Feather</string>
+    <string name="button_picture">Picture</string>
+    <string name="title_activity_color_select">Color Select</string>
+</resources>
